@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缺潛伴背心</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.8;
+            animation: backgroundAnimation 20s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                opacity: 0.8;
+                background-image: url('D:/FD/服裝/images/BACK.png');
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.8;
+                background-image: url('D:/FD/服裝/images/BACK1.png');
+            }
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #000;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .highlight {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1.5;
+            text-align: center;
+            animation: textAnimation 3s infinite alternate;
+        }
+        @keyframes textAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .product img:hover {
+            transform: scale(1.1);
+        }
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .product p {
+            margin: 0;
+            color: #555;
+        }
+        .contact-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00bcd4;
+            color: #fff;
+            font-size: 1.5em;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-button:hover {
+            background: #0097a7;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .about-text {
+            font-size: 1.5em;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            animation: textAnimation 3s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <header>
+            <h1>缺潛伴背心</h1>
+            <nav>
+                <a href="#home">首頁</a>
+                <a href="#products">商品</a>
+                <a href="#contact">購買表單</a>
+                <a href="#about">關於我們</a>
+            </nav>
+        </header>
+
+        <section id="home" class="section">
+            <div class="highlight">
+                <h2>各位缺潛伴的朋朋!買起來!</h2>
+                <p>曾經是潛水孤兒的我們，設計了一款讓彼此能開啟話題的背心，讓你潛伴滿滿.</p>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <h2>商品圖</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/LINE_ALBUM_2024613_240613_3.jpg" alt="Tank Top 1">
+                    <h3>正面</h3>
+                    
+                </div>
+                <div class="product">
+                    <img src="images/LINE_ALBUM_2024613_240613_4.jpg" alt="Tank Top 2">
+                    <h3>背面</h3>
+                    <p>NTD$ 590</p>
+                </div>
+                <div class="product">
+                    <img src="images/Henry.jpg"" alt="Tank Top 3">
+                    <h3>側拍</h3>
+                   
+                </div>
+                <div class="product">
+                    <img src="images/Henry1.jpg" alt="Tank Top 4">
+                    <h3>側拍2</h3>
+                   
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>購買表單</h2>
+            <a href="https://forms.gle/eU6Q6by6yBTyKBGk9" class="contact-button">前往 Google 表單</a>
+        </section>
+
+        <section id="about" class="section">
+            <div class="about-text">
+                <p>我們是愛好海洋跟自由潛水的人，也希望能透過這件背心的設計，讓大家能接觸到愛好海洋的潛伴們.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
